@@ -1,4 +1,4 @@
 # Welcome to Brick Labs
 
-![Flowchart](https://github.com/user-attachments/assets/b02c9e1d-197a-4657-91f3-785d61a9ea92)
+![Flowchart](https://github.com/user-attachments/assets/646d5e0b-88f2-4d13-b0c1-4d0e6b55e942)
 This chart shows the various projects this organization is working on and its external dependencies.
