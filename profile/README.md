@@ -37,16 +37,10 @@ graph TD
     ImGUI --> BLGUI
 
     %% Librararies to Applications
-    Renderer --> Viewer
-    Renderer --> Builder
-
-    GLFW --> Viewer
-    GLFW --> Builder
-
-    BLGUI --> Viewer
-    BLGUI --> Builder
-
-    FileHandler --> Viewer
+    Renderer --> Applications
+    GLFW --> Applications
+    BLGUI --> Applications 
+    FileHandler --> Applications
 
     %% Applications to Applications
     Engine --> Editor
