@@ -4,19 +4,26 @@
 ```mermaid
 graph TD
     
-    subgraph API
-        style API fill:#fdd
+    subgraph APIs
+        style APIs fill:#ffc
         Vulkan[<a href="https://vulkan.org">Vulkan</a>]
     end
 
+    subgraph Third-party Libraries
+        GLFW[<a href="https://www.glfw.org">GLFW</a>]
+        ImGUI[<a href="https://github.com/ocornut/imgui">ImGUI</a>]
+    end
+
     subgraph Libraries
-        Renderer
-        Filehandler
+        Renderer[<a href="https://github.com/Brick-Labs/Renderer">Renderer</a>]
+        FileHandler[<a href="https://github.com/Brick-Labs/FileHandler">FileHandler</a>]
+        BLGUI
     end
 
     subgraph Applications
-        Viewer
+        Viewer[<a href="https://github.com/Brick-Labs/Viewer">Viewer</a>]
         Builder
+        Engine
         Editor
         FilmMaker
     end
@@ -39,7 +46,10 @@ graph TD
     BLGUI --> Viewer
     BLGUI --> Builder
 
-    Filehandler --> Viewer
+    FileHandler --> Viewer
+
+    %% Applications to Applications
+    Engine --> Editor
 ```
 
 
