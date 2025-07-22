@@ -5,8 +5,8 @@
 graph TD
     
     subgraph APIs
-        style APIs fill:#ffc
         Vulkan[<a href="https://vulkan.org">Vulkan</a>]
+        BLAPI[<span>BrickLabs Web Api</span>]
     end
 
     subgraph Third-party Libraries
