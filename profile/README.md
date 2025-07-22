@@ -6,7 +6,7 @@ graph TD
     
     subgraph API
         style API fill:#fdd
-        Vulkan
+        Vulkan[<a href="https://vulkan.org">Vulkan</a>]
     end
 
     subgraph Libraries
