@@ -3,9 +3,31 @@
 
 ```mermaid
 graph TD
+    
+    subgraph API
+        style API fill:#fdd
+        Vulkan
+    end
+
+    subgraph Libraries
+        Renderer
+        Filehandler
+    end
+
+    subgraph Applications
+        Viewer
+        Builder
+        Editor
+        FilmMaker
+    end
+
     %% APIs to Libraries
     Vulkan --> Renderer
     Vulkan --> GLFW
+    Vulkan --> ImGUI
+
+    %% Libraries to Libraries
+    ImGUI --> BLGUI
 
     %% Librararies to Applications
     Renderer --> Viewer
@@ -13,6 +35,11 @@ graph TD
 
     GLFW --> Viewer
     GLFW --> Builder
+
+    BLGUI --> Viewer
+    BLGUI --> Builder
+
+    Filehandler --> Viewer
 ```
 
 
