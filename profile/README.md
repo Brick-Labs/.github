@@ -28,10 +28,17 @@ graph TD
         FilmMaker
     end
 
+    subgraph Websites
+        BrickLabsWeb[<a href="https://github.com/Brick-Labs/Website">BrickLabs</a>]
+    end
+
     %% APIs to Libraries
     Vulkan --> Renderer
     Vulkan --> GLFW
     Vulkan --> ImGUI
+
+    %% APIs to Websites
+    BLAPI --> BrickLabsWeb
 
     %% Libraries to Libraries
     ImGUI --> BLGUI
