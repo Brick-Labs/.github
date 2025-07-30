@@ -12,11 +12,13 @@ graph TD
     subgraph Third-party Libraries
         GLFW[<a href="https://www.glfw.org">GLFW</a>]
         ImGUI[<a href="https://github.com/ocornut/imgui">ImGUI</a>]
+        spdlog[<a href="https://github.com/gabime/spdlog">spdlog</a>]
     end
 
     subgraph Libraries
         Renderer[<a href="https://github.com/Brick-Labs/Renderer">Renderer</a>]
         FileHandler[<a href="https://github.com/Brick-Labs/FileHandler">FileHandler</a>]
+        Logger[<a href="https://github.com/Brick-Labs/Logger">Logger</a>]
         BLGUI
     end
 
@@ -42,12 +44,15 @@ graph TD
 
     %% Libraries to Libraries
     ImGUI --> BLGUI
+    spdlog --> Logger
+    Logger --> Renderer
 
     %% Librararies to Applications
     Renderer --> Applications
     GLFW --> Applications
     BLGUI --> Applications 
     FileHandler --> Applications
+    Logger --> Applications 
 
     %% Applications to Applications
     Engine --> Editor
