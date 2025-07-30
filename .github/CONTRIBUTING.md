@@ -18,6 +18,7 @@
 - The `main` branches is protected and can only be reached via pull requests
 
 ## Commits
+- Follow this [naming conventions](https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13)
 - Debugging features are only allowed in `sub-feature` branches
 - `sub-feature` branches are created by appending a `#`
 - For example like this `feature/branch#sub-feature`
