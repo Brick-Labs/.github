@@ -19,7 +19,7 @@ graph TD
         Renderer[<a href="https://github.com/Brick-Labs/Renderer">Renderer</a>]
         FileHandler[<a href="https://github.com/Brick-Labs/FileHandler">FileHandler</a>]
         Logger[<a href="https://github.com/Brick-Labs/Logger">Logger</a>]
-        BLGUI
+        BLGUI[<a href="https://github.com/Brick-Labs/BLGUI">BLGUI</a>]
     end
 
     subgraph Applications
