@@ -15,7 +15,7 @@ graph TD
         GLFW[<a href="https://www.glfw.org">GLFW</a>]
         ImGUI[<a href="https://github.com/ocornut/imgui">ImGUI</a>]
         spdlog[<a href="https://github.com/gabime/spdlog">spdlog</a>]
-        nlohmann_json[<a href="https://github.com/nlohmann/json">nlohmann/json</a>]
+        json[<a href="https://github.com/nlohmann/json">json</a>]
     end
 
     subgraph Libraries
@@ -56,7 +56,7 @@ graph TD
     BLGUI --> Applications 
     FileHandler --> Applications
     Logger --> Applications 
-    nlohmann_json --> Applications 
+    json --> Applications 
 
     %% Applications to Applications
     Engine --> Editor
