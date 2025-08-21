@@ -22,7 +22,7 @@ graph TD
         Renderer[<a href="https://github.com/Brick-Labs/Renderer">Renderer</a>]
         FileHandler[<a href="https://github.com/Brick-Labs/FileHandler">FileHandler</a>]
         Logger[<a href="https://github.com/Brick-Labs/Logger">Logger</a>]
-        BLGUI[<a href="https://github.com/Brick-Labs/Interface">Interface</a>]
+        Interface[<a href="https://github.com/Brick-Labs/Interface">Interface</a>]
     end
 
     subgraph Applications
@@ -46,17 +46,17 @@ graph TD
     BLAPI --> BrickLabsWeb
 
     %% Libraries to Libraries
-    ImGUI --> BLGUI
+    ImGUI --> Interface
     spdlog --> Logger
     Logger --> Renderer
+    json --> FileHandler
 
     %% Librararies to Applications
     Renderer --> Applications
     GLFW --> Applications
-    BLGUI --> Applications 
+    Interface --> Applications 
     FileHandler --> Applications
     Logger --> Applications
-    json --> Applications
 
     %% Applications to Applications
     Engine --> Editor
