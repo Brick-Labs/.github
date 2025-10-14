@@ -8,7 +8,7 @@ graph TD
     
     subgraph APIs
         Vulkan[<a href="https://vulkan.org">Vulkan</a>]
-        BLAPI[<span>BrickLabs Web Api</span>]
+        SteamAPI[<a href="https://partner.steamgames.com/doc/sdk/api">Steamworks-API</a>]
     end
 
     subgraph Third-party Libraries
@@ -40,9 +40,7 @@ graph TD
     Vulkan --> Renderer
     Vulkan --> GLFW
     Vulkan --> ImGUI
-
-    %% APIs to Websites
-    BLAPI --> BrickLabsWeb
+    SteamAPI --> FileHandler
 
     %% Libraries to Libraries
     ImGUI --> Interface
@@ -56,6 +54,9 @@ graph TD
     Interface --> Applications 
     FileHandler --> Applications
     Logger --> Applications
+
+    %% APIs to Applications
+    SteamAPI --> Applications
 
     %% Applications to Applications
     Engine --> Editor
