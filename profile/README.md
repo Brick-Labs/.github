@@ -26,8 +26,7 @@ graph TD
     end
 
     subgraph Applications
-        Viewer[<a href="https://github.com/Brick-Labs/Viewer">Viewer</a>]
-        Builder
+        Builder[<a href="https://github.com/Brick-Labs/Builder">Builder</a>]
         Engine
         Editor
         FilmMaker
