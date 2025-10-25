@@ -45,7 +45,6 @@ graph TD
     %% Libraries to Libraries
     ImGUI --> Interface
     spdlog --> Logger
-    Logger --> Renderer
     json --> FileHandler
 
     %% Librararies to Applications
