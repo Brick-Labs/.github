@@ -16,6 +16,7 @@ graph TD
         ImGUI[<a href="https://github.com/ocornut/imgui">ImGUI</a>]
         spdlog[<a href="https://github.com/gabime/spdlog">spdlog</a>]
         json[<a href="https://github.com/nlohmann/json">json</a>]
+        glm[<a href="https://github.com/g-truc/glm">glm</a>]
     end
 
     subgraph Libraries
@@ -46,6 +47,7 @@ graph TD
     ImGUI --> Interface
     spdlog --> Logger
     json --> FileHandler
+    glm --> Renderer
 
     %% Librararies to Applications
     Renderer --> Applications
